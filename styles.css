@@ -1,0 +1,166 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #111;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0f0;
+  }
+  
+  .nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-green {
+    background: #0f0;
+    color: #000;
+  }
+  
+  .btn-outline {
+    border: 2px solid #0f0;
+    color: #0f0;
+    background: none;
+  }
+  
+  /* Introduction */
+  .intro {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: url('background.jpg') no-repeat center/cover;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+  
+  .intro p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  /* Features */
+  .features {
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .feature {
+    max-width: 300px;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0f0;
+  }
+  
+  /* Pricing */
+  .pricing {
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .plan {
+    border: 1px solid #444;
+    padding: 2rem;
+    max-width: 300px;
+    background: #111;
+  }
+  
+  .plan.popular {
+    border-color: #0f0;
+  }
+  
+  /* Call to Action */
+  .cta {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #222;
+  }
+  
+  .cta p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 2rem;
+    background: #111;
+  }
+  
+  .footer-links {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links a {
+    margin: 0 1rem;
+    color: #0f0;
+  }
+  /* Mobile Styles */
+@media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .features-grid {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .pricing-grid {
+      flex-direction: column;
+    }
+  }
+  
